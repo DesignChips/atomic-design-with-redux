@@ -1,0 +1,8 @@
+{
+  "name": "atomic-design-with-redux",
+  "version": "1.0.0",
+  "main": "src/static/index.js",
+  "repository": "https://github.com/DesignChips/atomic-design-with-redux.git",
+  "author": "Matsuda Yuichiro",
+  "license": "MIT"
+}
