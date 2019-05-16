@@ -5,6 +5,9 @@
   "repository": "https://github.com/DesignChips/atomic-design-with-redux.git",
   "author": "Matsuda Yuichiro",
   "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/static/index.html"
+  },
   "devDependencies": {
     "parcel-bundler": "^1.12.3"
   }
