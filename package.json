@@ -9,13 +9,22 @@
     "dev": "parcel src/static/index.html"
   },
   "devDependencies": {
+    "@types/history": "^4.7.2",
     "@types/react": "^16.8.17",
     "@types/react-dom": "^16.8.4",
+    "@types/react-redux": "^7.0.9",
+    "@types/react-router": "^5.0.1",
+    "@types/redux": "^3.6.0",
     "parcel-bundler": "^1.12.3",
     "typescript": "^3.4.5"
   },
   "dependencies": {
+    "connected-react-router": "^6.4.0",
+    "history": "^4.9.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
+    "react-router": "^5.0.0",
+    "redux": "^4.0.1"
   }
 }
