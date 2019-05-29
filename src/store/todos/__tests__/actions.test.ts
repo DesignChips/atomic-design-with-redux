@@ -32,4 +32,21 @@ describe('todos reducer', () => {
   it('should return the initial state', () => {
     expect(reducer(undefined)).toEqual([]);
   });
+
+  it('should handle ADD_TODO', () => {
+    expect(
+      reducer([], {
+        type: ADD_TODO,
+        payload: {
+          id: 1,
+          description: 'Finish docs'
+        }
+      })
+    ).toEqual([
+      {
+        id: 1,
+        description: 'Finish docs'
+      }
+    ]);
+  });
 });
