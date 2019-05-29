@@ -1,5 +1,5 @@
 import { Action } from 'redux';
-import { isType } from 'typescript-fsa';
+import { isType, ActionCreator } from 'typescript-fsa';
 import { addTodo, removeTodo } from './actions';
 import { Todo } from './entity';
 import { insertItem, removeItem } from '../../utils/immutable';
@@ -10,7 +10,7 @@ export const todosInitialState: TodosState = [];
 
 export const todos = (
   state: TodosState = todosInitialState,
-  action?: Action
+  action?: Action<ActionCreator<Todo>>
 ): TodosState => {
   if (!action) {
     return state;
