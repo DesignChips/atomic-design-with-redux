@@ -6,7 +6,8 @@
   "author": "Matsuda Yuichiro",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel src/static/index.html"
+    "dev": "parcel src/static/index.html",
+    "test": "jest"
   },
   "devDependencies": {
     "@types/history": "^4.7.2",
