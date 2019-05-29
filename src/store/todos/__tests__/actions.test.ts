@@ -49,4 +49,15 @@ describe('todos reducer', () => {
       }
     ]);
   });
+
+  it('should handle REMOVE_TODO', () => {
+    const id = 1;
+    const description = 'Finish docs';
+    expect(
+      reducer([{ id, description }], {
+        type: REMOVE_TODO,
+        payload: { id, description }
+      })
+    ).toEqual([]);
+  });
 });
