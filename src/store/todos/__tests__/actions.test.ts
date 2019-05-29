@@ -4,8 +4,9 @@ import {
   addTodo,
   removeTodo
 } from '../actions';
+import { todos as reducer } from "../reducer";
 
-describe('actions', () => {
+describe('todos actions', () => {
   it('should create an action to add a todo', () => {
     const id = 1;
     const description = 'Finish docs';
@@ -24,5 +25,11 @@ describe('actions', () => {
       payload: { id, description }
     };
     expect(removeTodo({ id, description })).toEqual(expectedAction)
+  });
+});
+
+describe('todos reducer', () => {
+  it('should return the initial state', () => {
+    expect(reducer(undefined)).toEqual([]);
   });
 });
