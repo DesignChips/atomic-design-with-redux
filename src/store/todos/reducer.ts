@@ -10,8 +10,12 @@ export const todosInitialState: TodosState = [];
 
 export const todos = (
   state: TodosState = todosInitialState,
-  action: Action
+  action?: Action
 ): TodosState => {
+  if (!action) {
+    return state;
+  }
+
   if (isType(action, addTodo)) {
     return insertItem(state, action.payload, state.length + 1);
   }
