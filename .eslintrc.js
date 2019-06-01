@@ -5,7 +5,8 @@ module.exports = {
     "plugin:react/recommended"
   ],
   "env": {
-    "jest/globals": true
+    "jest/globals": true,
+    "browser": true
   },
   "plugins": [
     "@typescript-eslint",
