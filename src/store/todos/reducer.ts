@@ -1,7 +1,7 @@
 import { reducerWithInitialState } from "typescript-fsa-reducers";
-import { addTodo, removeTodo } from './actions';
-import { Todo } from './entity';
-import { insertItem, removeItem } from '../../utils/immutable';
+import { addTodo, removeTodo } from "./actions";
+import { Todo } from "./entity";
+import { insertItem, removeItem } from "../../utils/immutable";
 
 export type TodosState = Todo[];
 
