@@ -10,5 +10,13 @@ module.exports = {
   "parserOptions": {
     "sourceType": "module",
     "project": "./tsconfig.json"
-  }
+  },
+  "overrides": [
+    {
+      files: ['*.ts', '*.tsx'],
+      rules: {
+        '@typescript-eslint/no-unused-vars': [2, { args: 'none' }]
+      }
+    }
+  ]
 };
