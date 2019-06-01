@@ -4,17 +4,14 @@ import { Provider } from "react-redux";
 import { ConnectedRouter } from "connected-react-router";
 import { AppShell } from "./AppShell";
 import { browserHistory, store } from "./store";
+import { Index } from "./pages";
 
 export const App = () => (
   <Provider store={store}>
     <AppShell>
       <ConnectedRouter history={browserHistory}>
         <Switch>
-          <Route
-            exact
-            path="/"
-            render={() => <div>Atomic Design with Redux</div>}
-          />
+          <Route exact path="/" render={() => <Index />} />
           <Route render={() => <div>Miss</div>} />
         </Switch>
       </ConnectedRouter>
