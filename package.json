@@ -7,7 +7,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel src/static/index.html",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint 'src/**'",
+    "lintfix": "eslint --fix 'src/**'"
   },
   "devDependencies": {
     "@types/history": "^4.7.2",
