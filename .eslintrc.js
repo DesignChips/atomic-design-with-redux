@@ -1,14 +1,16 @@
 module.exports = {
   "extends": [
     "eslint:recommended", // お好きなESLint設定をここに
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:react/recommended"
   ],
   "env": {
     "jest/globals": true
   },
   "plugins": [
     "@typescript-eslint",
-    "jest"
+    "jest",
+    "react"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
