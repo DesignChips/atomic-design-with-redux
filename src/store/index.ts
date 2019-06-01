@@ -1,7 +1,7 @@
-import * as history from 'history';
-import { applyMiddleware, combineReducers, compose, createStore } from 'redux';
-import { connectRouter } from 'connected-react-router';
-import { todos, todosInitialState, TodosState } from './todos/reducer';
+import * as history from "history";
+import { applyMiddleware, combineReducers, compose, createStore } from "redux";
+import { connectRouter } from "connected-react-router";
+import { todos, todosInitialState, TodosState } from "./todos/reducer";
 
 declare global {
   interface Window {
@@ -10,11 +10,11 @@ declare global {
 }
 
 export type InitialState = {
-  todos: TodosState,
+  todos: TodosState;
   router?: any;
-}
+};
 
-const initialState: InitialState  = {
+const initialState: InitialState = {
   todos: todosInitialState
 };
 

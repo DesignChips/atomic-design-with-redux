@@ -1,11 +1,11 @@
-import actionCreatorFactory, { ActionCreator } from 'typescript-fsa';
-import { Todo } from './entity';
+import actionCreatorFactory, { ActionCreator } from "typescript-fsa";
+import { Todo } from "./entity";
 
 /*
  * action types
  */
-export const ADD_TODO = 'ADD_TODO';
-export const REMOVE_TODO = 'REMOVE_TODO';
+export const ADD_TODO = "ADD_TODO";
+export const REMOVE_TODO = "REMOVE_TODO";
 
 /*
  * action creators
