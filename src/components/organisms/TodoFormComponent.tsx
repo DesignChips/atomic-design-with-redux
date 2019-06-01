@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { TodoFormProps } from "../../containers/TodoFormContainer";
+import { TextInputComponent } from "../atoms/form/TextInputComponent";
+import { SubmitButtonComponent as SubmitButton } from "../atoms/form/SubmitButtonComponent";
 
 type TodoFormValues = {
   description: string;
@@ -19,11 +21,11 @@ export const TodoFormComponent: React.FC<TodoFormProps> = props => {
       }}
       render={({ isSubmitting }) => (
         <Form>
-          <Field type="text" name="description" />
+          <Field type="text" name="description" component={TextInputComponent} placeholder="description ..."/>
           <ErrorMessage name="description" component="div" />
-          <button type="submit" disabled={isSubmitting}>
+          <SubmitButton type="submit" disabled={isSubmitting}>
             Submit
-          </button>
+          </SubmitButton>
         </Form>
       )}
     />
