@@ -1,5 +1,6 @@
 import * as React from "react";
-import { Formik, Field, Form, ErrorMessage } from "formik";
+import Box from '@material-ui/core/Box';
+import { Formik, Field, Form } from "formik";
 import { TodoFormProps } from "../../containers/TodoFormContainer";
 import { TextInputComponent } from "../atoms/form/TextInputComponent";
 import { SubmitButtonComponent as SubmitButton } from "../atoms/form/SubmitButtonComponent";
@@ -21,11 +22,12 @@ export const TodoFormComponent: React.FC<TodoFormProps> = props => {
       }}
       render={({ isSubmitting }) => (
         <Form>
-          <Field type="text" name="description" component={TextInputComponent} placeholder="description ..."/>
-          <ErrorMessage name="description" component="div" />
-          <SubmitButton type="submit" disabled={isSubmitting}>
-            Submit
-          </SubmitButton>
+          <Box display="flex">
+            <Field type="text" name="description" component={TextInputComponent} placeholder="Todo Description"/>
+            <SubmitButton type="submit" disabled={isSubmitting}>
+              Add
+            </SubmitButton>
+          </Box>
         </Form>
       )}
     />
