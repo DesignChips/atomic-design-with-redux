@@ -19,6 +19,7 @@ export const TodoFormComponent: React.FC<TodoFormProps> = props => {
           description: value.description
         });
         actions.setSubmitting(false);
+        actions.resetForm();
       }}
       render={({ isSubmitting }) => (
         <Form>
